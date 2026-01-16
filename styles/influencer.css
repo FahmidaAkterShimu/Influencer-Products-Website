@@ -225,3 +225,28 @@ header{
     margin-bottom: 16px;
 }
 
+/* Footer Section */
+footer{
+    text-align: center;
+    padding: 50px 0px;
+    background-color: var(--sixth-color);
+    margin: 0 auto;
+}
+
+.footer h2{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #FFFFFF;
+}
+
+.footer p{
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: #D9DBE1;
+}
+
+.footer ul{
+    margin-top: 17px;
+    justify-content: center;
+    gap: 16px;
+}
