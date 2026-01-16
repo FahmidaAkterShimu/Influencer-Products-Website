@@ -16,7 +16,11 @@
 
 /* Primary Color */
 :root{
-    --primary-color: #3A3A3A;
+    --first-color: #3A3A3A;
+    --second-color: #18191F;
+    --third-color: rgba(0, 0, 0, 0.87);
+    --forth-color: #5E6366;
+    --fifth-color: #787885;
 }
 
 main{
@@ -28,13 +32,12 @@ main{
 }
 
 .button{
-    font-size: 16px;
+    font-size: 1rem;
     color: #FFFFFF;
     background-color: #E02C6D;
     border: none;
     padding: 10px 24px;
     gap: 8px;
-    /* border-radius: 41px; */
 }
 
 
@@ -45,15 +48,15 @@ header{
 }
 
 .navbar{
-    max-width: 1200px;
+    width: 83%;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 
 .navbar h3{
-    font-size: 24px;
-    color: var(--primary-color);
+    font-size: 1.5rem;
+    color: var(--first-color);
 }
 
 .navbar ul{
@@ -65,46 +68,40 @@ header{
 
 .navbar ul a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--first-color);
 }
 
 
 /* Banner/hero Section styles */
 .hero{
-    max-width: 1188px;
-    padding-top: 12px;
-    justify-content: center;
+    width: 82.5%;
+    padding-top: 52px;
+    justify-content: space-evenly;
     align-items: center;
-    color: var(--primary-color);
+    color: var(--first-color);
     margin: 0 auto;
-    gap: 133px;
-}
-
-.bg-img{
-    position: relative;
-    top: 40px;
+    gap: 250px;
 }
 
 .main-img{
-    position: relative;
-    bottom: 420px;
+    position: absolute;
+    bottom: 644px;
 }
 
 .hero-content{
-    position: relative;
-    bottom: 200px;
+    max-width: 582px;
 }
 
 .hero-content h1{
-    font-size: 52px;
+    font-size: 3.25rem;
     line-height: 70px;
     margin-bottom: 16px;
 }
 
 .hero-content p{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600px;
     margin-bottom: 16px;
 }
@@ -112,3 +109,89 @@ header{
 .hero-content button{
     border-radius: 41px;
 }
+
+
+/* Sponsors related styles */
+.sponsors{
+    width: 77%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 36px 62px;
+    margin: 0 auto;
+    margin-top: 69px;
+    gap: 61px;
+    background: linear-gradient(135.29deg, rgba(192, 204, 218, 0.1),rgba(192, 204, 218, 0.6) 50%,rgba(192, 204, 218, 0.1) 100%);
+}
+
+
+/* Popular Collection related styles*/
+.collection{
+    width: 73%;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.collection .title{
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--first-color);
+    margin-bottom: 30px;
+}
+
+.cards-container{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+}
+
+.cards-container .card{
+    max-width: 329px;
+    padding: 17px 15px 17px 14px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--second-color);
+    margin: 16px 0px 6px 0px;
+}
+
+.card .price{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--third-color);
+}
+
+.card .rating{
+    font-size: 0.89rem;
+    line-height: 22px;
+    color: var(--forth-color);
+    padding: 5px 13px 5px 0px;
+}
+
+.card .details{
+    font-size: 0.875rem;
+    line-height: 143%;
+    color: var(--fifth-color);
+}
+
+.btn{
+    max-width: 1144px;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.btn button{
+    font-size: 1rem;
+    color: rgba(224, 44, 109, 0.87);
+    border: none;
+    background-color: white;
+}
+
