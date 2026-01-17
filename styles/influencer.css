@@ -1,11 +1,11 @@
+/* For font-style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
-/* For font-style */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Font-size */
 .poppins-bold {
@@ -34,11 +34,11 @@ main {
 
 .button {
     font-size: 1rem;
+    font-weight: 700;
     color: #FFFFFF;
     background-color: #E02C6D;
     border: none;
     padding: 10px 24px;
-    gap: 8px;
 }
 
 
@@ -55,7 +55,7 @@ header {
     margin: 0 auto;
 }
 
-.navbar h3 {
+.navbar h1 {
     font-size: 1.5rem;
     color: var(--first-color);
 }
@@ -89,7 +89,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     color: var(--first-color);
-    margin: 0 auto;
+    margin: 0px auto 69px;
     gap: 250px;
 }
 
@@ -105,7 +105,7 @@ header {
 
 .hero-content p {
     font-size: 1rem;
-    font-weight: 600px;
+    font-weight: 600;
     margin-bottom: 16px;
 }
 
@@ -124,15 +124,21 @@ header {
 
 
 /* Sponsors related styles */
-.sponsors {
+
+.sponsor-divider{
     width: 77%;
-    justify-content: space-around;
+    height: 1px;
+    margin: 0px auto;
+    background: linear-gradient(135.29deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
+}
+
+
+.sponsors {
+    width: 68.5%;
+    justify-content: space-between;
     align-items: center;
-    padding: 36px 62px;
-    margin: 0 auto;
-    margin-top: 69px;
+    margin: 35px auto 34px;
     gap: 61px;
-    background: linear-gradient(135.29deg, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6) 50%, rgba(192, 204, 218, 0.1) 100%);
 }
 
 
@@ -140,7 +146,7 @@ header {
 .collection {
     width: 73%;
     justify-content: center;
-    margin: 0 auto;
+    margin: 100px auto 0px;
     margin-top: 100px;
 }
 
@@ -154,8 +160,8 @@ header {
 
 .cards-container {
     display: grid;
-    place-items: center;
     /* To center-align the grid items */
+    place-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
 }
@@ -203,6 +209,7 @@ header {
 
 .btn button {
     font-size: 1rem;
+    font-weight: 700;
     color: rgba(224, 44, 109, 0.87);
     border: none;
     background-color: white;
@@ -264,45 +271,147 @@ footer {
     gap: 16px;
 }
 
-
-/* Responsive design */
-/* .hide {
+/* For Responsive design */
+.hide {
     display: none !important;
-} */
+}
 
-/* Media Query */
-/* @media screen and (max-width: 576px) {
+
+/* ============= Media Query ============= */
+/* Tablet Responsiveness */
+@media (max-width: 768px) {
+
+    .hero {
+        gap: 60px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .feature {
+        gap: 48px;
+    }
+}
+
+
+
+/* For Mobile device*/
+
+@media (max-width: 576px) {
     header {
-        padding: 0;
+        padding-top: 35px;
     }
 
     .navbar {
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 35px;
-        margin-bottom: 22px;
+        width: 90%;
     }
-    .navbar h2{
-        font-size: 1rem;
+
+    .navbar h1 {
+        font-size: 1.1rem;
     }
 
     .navbar ul {
-        display: none;
+        display: none; /* hide menu links */
     }
 
     .menu-toggle,
     .cart {
-        display: flex;
+        display: inline;
+        width: 24px;
+        height: 24px;
     }
 
+    /* Hero Section */
     .hero {
-        padding: 0;
         flex-direction: column-reverse;
+        width: 90%;
         gap: 14px;
-    }
-
-    .hero-content {
         text-align: center;
+        margin: 22px auto 0;
+        padding: 0;
     }
 
-} */
+    .hero-content h1 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .bg-img img {
+        width: 80%;
+    }
+
+    .main-img img {
+        width: 65%;
+    }
+
+    .main-img {
+        position: absolute;
+        top: 35px;
+    }
+
+    /* Sponsors */
+    .sponsor-divider{
+        display: none;
+    }
+
+    .sponsors {
+        flex-wrap: wrap;
+        width: 76%;
+        gap: 16px;
+    }
+
+    .sponsors img {
+        width: 55px;
+    }
+
+    /* Popular Collection */
+    .collection {
+        width: 89%;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .btn {
+        justify-content: flex-end;
+    }
+
+    /* Feature Section */
+    .feature {
+        margin-top: -50px;
+        flex-direction: column-reverse ;
+        width: 90%;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .feature-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .feature-img img {
+        width: 85%;
+        margin-bottom: -50px;
+    }
+
+    /* Footer */
+    .footer  h2{
+        font-size: 1rem;
+    }
+
+    .footer p{
+        font-size: .75rem;
+    }
+}
