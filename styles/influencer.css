@@ -278,24 +278,6 @@ footer {
 
 
 /* ============= Media Query ============= */
-/* Tablet Responsiveness */
-@media (max-width: 768px) {
-
-    .hero {
-        gap: 60px;
-    }
-
-    .cards-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-    }
-
-    .feature {
-        gap: 48px;
-    }
-}
-
-
 
 /* For Mobile device*/
 
@@ -415,3 +397,21 @@ footer {
         font-size: .75rem;
     }
 }
+
+
+/* Tablet Responsiveness */
+/* @media (max-width: 768px) {
+
+    .hero {
+        gap: 60px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .feature {
+        gap: 48px;
+    }
+} */
